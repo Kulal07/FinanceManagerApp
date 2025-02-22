@@ -1,0 +1,81 @@
+/* Dashboard.css */
+.dashboard-container {
+    background-color: var(--secondary-color); /* Updated background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--text-color); /* Updated color */
+}
+
+.dashboard-button {
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for button */
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+}
+
+
+
+
+.dashboard-button:hover {
+    background-color: var(--accent-color); /* Updated hover color */
+    transform: scale(1.05); /* Added scale effect */
+}
+
+.dashboard-table {
+    margin-top: 20px;
+    width: 100%; /* Full width for the table */
+}
+
+.dashboard-chart {
+    margin-top: 20px; /* Spacing for the chart */
+    max-width: 600px; /* Restored to original size */
+    width: 100%; /* Ensure the chart is responsive */
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.controls-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.row-inputs {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.row-inputs .col-6 {
+    flex: 1;
+}
+
+.text-center {
+    text-align: center;
+}

@@ -1,0 +1,80 @@
+/* Login.css */
+:root {
+    --primary-color: #2A2D3E;
+    --secondary-color: #F4F4F4;
+    --accent-color: #FF9800;
+    --background-color: #EAEAEA;
+    --text-color: #333;
+}
+
+body {
+    background: linear-gradient(135deg, var(--primary-color), #008080);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height for centering */
+    padding: 20px;
+    background-color: var(--secondary-color); /* Updated background color */
+}
+
+
+.login-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--text-color); /* Updated color */
+}
+
+
+.login-button {
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for button */
+}
+
+
+.login-button:hover {
+    background-color: var(--accent-color); /* Updated hover color */
+    transform: scale(1.05); /* Added scale effect */
+}
+
+
+.alert {
+    margin-top: 10px;
+    transition: opacity 0.5s ease; /* Smooth transition for alert */
+}
+
+.fade-in {
+    opacity: 1;
+    animation: fadeIn 0.5s; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.fade-in {
+    opacity: 1;
+    animation: fadeIn 0.5s; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
