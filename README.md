@@ -1,70 +1,151 @@
-# Getting Started with Create React App
+# Finance Manager App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a Finance Manager application built using Node.js, React, Bootstrap, and MongoDB. It allows users to track their expenses and credits, providing an interactive dashboard with tables and charts for financial insights.
+
+## Tech Stack
+
+- **Frontend:** React, Bootstrap  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+
+## Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed:
+- Node.js
+- MongoDB
+
+### Clone the Repository
+
+```sh
+git clone https://github.com/your-username/finance-manager.git
+cd finance-manager
+```
+
+## Backend Setup
+
+Navigate to the backend folder:
+
+```sh
+cd backend
+```
+
+Install dependencies:
+
+```sh
+npm install
+```
+
+Create a `.env` file for environment variables:
+
+```sh
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+```
+
+Start the backend server:
+
+```sh
+npm start
+```
+
+The backend will run on [http://localhost:5000](http://localhost:5000).
+
+## Frontend Setup
+
+Navigate to the frontend folder:
+
+```sh
+cd frontend
+```
+
+Install dependencies:
+
+```sh
+npm install
+```
+
+Start the frontend application:
+
+```sh
+npm start
+```
+
+The frontend will be available at [http://localhost:3000](http://localhost:3000).
 
 ## Available Scripts
 
-In the project directory, you can run:
+### Backend Scripts
 
-### `npm start`
+- `npm start` – Runs the backend server.
+- `npm run dev` – Runs the backend with nodemon for auto-reloading.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend Scripts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `npm start` – Starts the React development server.
+- `npm run build` – Builds the app for production.
 
-### `npm test`
+## Project Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Authentication
 
-### `npm run build`
+✅ User signup with validation rules:
+- At least 8 characters long
+- Contains 1 special character (@, #, $, etc.)
+- Contains 1 uppercase letter
+- Contains 1 number
+✅ User login with email & password verification.
+✅ Error messages for incorrect credentials.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Dashboard Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+✅ **New Transaction Entry:**
+- Add credit or expense with description, amount, and date.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+✅ **Transaction Table:**
+- Displays all recorded transactions.
+- Allows sorting and filtering.
 
-### `npm run eject`
+✅ **Data Visualization:**
+- A chart showing income vs. expenses.
+- Hover effects & interactive UI.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### UI/UX Enhancements
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+✅ Bootstrap styling for a professional look.  
+✅ Dark mode toggle using JavaScript.  
+✅ Responsive design for mobile & desktop.  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Frontend Deployment
 
-## Learn More
+```sh
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Then, deploy the `build` folder to Netlify, Vercel, or any hosting provider.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Backend Deployment
 
-### Code Splitting
+Use Heroku, Render, or VPS (DigitalOcean, AWS, etc.).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```sh
+git push heroku main
+```
 
-### Analyzing the Bundle Size
+Ensure the MongoDB URI is correctly set in environment variables.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+1. **Fork** the repository  
+2. **Create a new branch** (`feature/your-feature`)  
+3. **Commit your changes** (`git commit -m 'Add new feature'`)  
+4. **Push to the branch** (`git push origin feature/your-feature`)  
+5. **Open a Pull Request**  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+**Happy Coding! 🚀**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
